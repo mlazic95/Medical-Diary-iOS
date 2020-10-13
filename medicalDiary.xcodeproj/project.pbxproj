@@ -3,10 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B15A89C252CA9C60028D70C /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15A89B252CA9C60028D70C /* Util.swift */; };
+		3B15A8C5252DB3810028D70C /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15A8C4252DB3810028D70C /* StatsViewController.swift */; };
+		3B15A8CA252DB4960028D70C /* MorningInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15A8C9252DB4960028D70C /* MorningInput.swift */; };
+		3B15A8D0252DBBE80028D70C /* EveningInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15A8CF252DBBE80028D70C /* EveningInput.swift */; };
+		3B15A901252DD9920028D70C /* StatsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15A900252DD9920028D70C /* StatsTableViewController.swift */; };
+		3B15A906252DDC630028D70C /* InputDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15A905252DDC630028D70C /* InputDataSource.swift */; };
+		3B15A90F252DE59C0028D70C /* StatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15A90D252DE59C0028D70C /* StatsTableViewCell.swift */; };
+		3B15A933252DEF790028D70C /* SimpleChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15A932252DEF790028D70C /* SimpleChartViewController.swift */; };
+		3B15A93B252DF03F0028D70C /* StatsCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15A93A252DF03F0028D70C /* StatsCellProtocol.swift */; };
+		3B15A95A252F7A710028D70C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15A959252F7A710028D70C /* LoginViewController.swift */; };
+		3B15A960253087CE0028D70C /* RequestIntreceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15A95F253087CE0028D70C /* RequestIntreceptor.swift */; };
+		3B15A98F253420DE0028D70C /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15A98E253420DE0028D70C /* LaunchScreenViewController.swift */; };
+		3B15A9942534245C0028D70C /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15A9932534245C0028D70C /* APIError.swift */; };
+		3B15A9E72534880E0028D70C /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15A9E62534880E0028D70C /* SettingsTableViewController.swift */; };
 		3B8F2207252B4E5500A423B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F2206252B4E5500A423B7 /* AppDelegate.swift */; };
 		3B8F2209252B4E5500A423B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F2208252B4E5500A423B7 /* SceneDelegate.swift */; };
 		3B8F220B252B4E5500A423B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F220A252B4E5500A423B7 /* ViewController.swift */; };
@@ -15,6 +29,11 @@
 		3B8F2213252B4E5600A423B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8F2211252B4E5600A423B7 /* LaunchScreen.storyboard */; };
 		3B8F221E252B4E5600A423B7 /* medicalDiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F221D252B4E5600A423B7 /* medicalDiaryTests.swift */; };
 		3B8F2229252B4E5600A423B7 /* medicalDiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F2228252B4E5600A423B7 /* medicalDiaryUITests.swift */; };
+		3B8F223A252B4EEC00A423B7 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F2239252B4EEC00A423B7 /* Api.swift */; };
+		3B8F2241252B4EF400A423B7 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F223E252B4EF400A423B7 /* QuestionsViewController.swift */; };
+		3B8F2242252B4EF400A423B7 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F223F252B4EF400A423B7 /* Question.swift */; };
+		3B8F2243252B4EF400A423B7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F2240252B4EF400A423B7 /* Constants.swift */; };
+		9CD9AF3DEA146AEAE133388C /* Pods_medicalDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD16C707FE44548D2C1E25E /* Pods_medicalDiary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +54,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B15A89B252CA9C60028D70C /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		3B15A8C4252DB3810028D70C /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+		3B15A8C9252DB4960028D70C /* MorningInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningInput.swift; sourceTree = "<group>"; };
+		3B15A8CF252DBBE80028D70C /* EveningInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveningInput.swift; sourceTree = "<group>"; };
+		3B15A900252DD9920028D70C /* StatsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsTableViewController.swift; sourceTree = "<group>"; };
+		3B15A905252DDC630028D70C /* InputDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputDataSource.swift; sourceTree = "<group>"; };
+		3B15A90D252DE59C0028D70C /* StatsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsTableViewCell.swift; sourceTree = "<group>"; };
+		3B15A932252DEF790028D70C /* SimpleChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleChartViewController.swift; sourceTree = "<group>"; };
+		3B15A93A252DF03F0028D70C /* StatsCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCellProtocol.swift; sourceTree = "<group>"; };
+		3B15A955252F78E70028D70C /* medicalDiary.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = medicalDiary.entitlements; sourceTree = "<group>"; };
+		3B15A959252F7A710028D70C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3B15A95F253087CE0028D70C /* RequestIntreceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestIntreceptor.swift; sourceTree = "<group>"; };
+		3B15A98E253420DE0028D70C /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		3B15A9932534245C0028D70C /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		3B15A9E62534880E0028D70C /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		3B8F2203252B4E5500A423B7 /* medicalDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = medicalDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B8F2206252B4E5500A423B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B8F2208252B4E5500A423B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +83,13 @@
 		3B8F2224252B4E5600A423B7 /* medicalDiaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = medicalDiaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B8F2228252B4E5600A423B7 /* medicalDiaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medicalDiaryUITests.swift; sourceTree = "<group>"; };
 		3B8F222A252B4E5600A423B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B8F2239252B4EEC00A423B7 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		3B8F223E252B4EF400A423B7 /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		3B8F223F252B4EF400A423B7 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		3B8F2240252B4EF400A423B7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8BADB92A0FE8D9E992CF858B /* Pods-medicalDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medicalDiary.debug.xcconfig"; path = "Target Support Files/Pods-medicalDiary/Pods-medicalDiary.debug.xcconfig"; sourceTree = "<group>"; };
+		A97924B95F8C6278B1AFA9EA /* Pods-medicalDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medicalDiary.release.xcconfig"; path = "Target Support Files/Pods-medicalDiary/Pods-medicalDiary.release.xcconfig"; sourceTree = "<group>"; };
+		BFD16C707FE44548D2C1E25E /* Pods_medicalDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_medicalDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CD9AF3DEA146AEAE133388C /* Pods_medicalDiary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +118,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CF97857F0EF739C456763F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8BADB92A0FE8D9E992CF858B /* Pods-medicalDiary.debug.xcconfig */,
+				A97924B95F8C6278B1AFA9EA /* Pods-medicalDiary.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		37EAB9BBA2A3CCAC711C41A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFD16C707FE44548D2C1E25E /* Pods_medicalDiary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B15A8CE252DBBD20028D70C /* models */ = {
+			isa = PBXGroup;
+			children = (
+				3B8F223F252B4EF400A423B7 /* Question.swift */,
+				3B15A8C9252DB4960028D70C /* MorningInput.swift */,
+				3B15A8CF252DBBE80028D70C /* EveningInput.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		3B15A95E253087BC0028D70C /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				3B15A9932534245C0028D70C /* APIError.swift */,
+				3B8F2239252B4EEC00A423B7 /* Api.swift */,
+				3B15A95F253087CE0028D70C /* RequestIntreceptor.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		3B15A984253090FB0028D70C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3B8F220C252B4E5500A423B7 /* Main.storyboard */,
+				3B8F2211252B4E5600A423B7 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		3B8F21FA252B4E5500A423B7 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +171,8 @@
 				3B8F221C252B4E5600A423B7 /* medicalDiaryTests */,
 				3B8F2227252B4E5600A423B7 /* medicalDiaryUITests */,
 				3B8F2204252B4E5500A423B7 /* Products */,
+				1CF97857F0EF739C456763F1 /* Pods */,
+				37EAB9BBA2A3CCAC711C41A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +189,27 @@
 		3B8F2205252B4E5500A423B7 /* medicalDiary */ = {
 			isa = PBXGroup;
 			children = (
+				3B15A984253090FB0028D70C /* Storyboards */,
+				3B15A95E253087BC0028D70C /* Api */,
+				3B15A8CE252DBBD20028D70C /* models */,
+				3B8F2240252B4EF400A423B7 /* Constants.swift */,
+				3B15A932252DEF790028D70C /* SimpleChartViewController.swift */,
+				3B8F223E252B4EF400A423B7 /* QuestionsViewController.swift */,
+				3B15A905252DDC630028D70C /* InputDataSource.swift */,
 				3B8F2206252B4E5500A423B7 /* AppDelegate.swift */,
 				3B8F2208252B4E5500A423B7 /* SceneDelegate.swift */,
-				3B8F220A252B4E5500A423B7 /* ViewController.swift */,
-				3B8F220C252B4E5500A423B7 /* Main.storyboard */,
 				3B8F220F252B4E5600A423B7 /* Assets.xcassets */,
-				3B8F2211252B4E5600A423B7 /* LaunchScreen.storyboard */,
 				3B8F2214252B4E5600A423B7 /* Info.plist */,
+				3B15A955252F78E70028D70C /* medicalDiary.entitlements */,
+				3B8F220A252B4E5500A423B7 /* ViewController.swift */,
+				3B15A89B252CA9C60028D70C /* Util.swift */,
+				3B15A8C4252DB3810028D70C /* StatsViewController.swift */,
+				3B15A900252DD9920028D70C /* StatsTableViewController.swift */,
+				3B15A90D252DE59C0028D70C /* StatsTableViewCell.swift */,
+				3B15A93A252DF03F0028D70C /* StatsCellProtocol.swift */,
+				3B15A959252F7A710028D70C /* LoginViewController.swift */,
+				3B15A98E253420DE0028D70C /* LaunchScreenViewController.swift */,
+				3B15A9E62534880E0028D70C /* SettingsTableViewController.swift */,
 			);
 			path = medicalDiary;
 			sourceTree = "<group>";
@@ -135,9 +239,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B8F222D252B4E5600A423B7 /* Build configuration list for PBXNativeTarget "medicalDiary" */;
 			buildPhases = (
+				27A4004575ACB301970D9FCA /* [CP] Check Pods Manifest.lock */,
 				3B8F21FF252B4E5500A423B7 /* Sources */,
 				3B8F2200252B4E5500A423B7 /* Frameworks */,
 				3B8F2201252B4E5500A423B7 /* Resources */,
+				A368CA2D66AEEA5D672C3299 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,14 +359,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		27A4004575ACB301970D9FCA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-medicalDiary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A368CA2D66AEEA5D672C3299 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-medicalDiary/Pods-medicalDiary-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-medicalDiary/Pods-medicalDiary-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-medicalDiary/Pods-medicalDiary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3B8F21FF252B4E5500A423B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B15A98F253420DE0028D70C /* LaunchScreenViewController.swift in Sources */,
 				3B8F220B252B4E5500A423B7 /* ViewController.swift in Sources */,
+				3B15A90F252DE59C0028D70C /* StatsTableViewCell.swift in Sources */,
+				3B8F2241252B4EF400A423B7 /* QuestionsViewController.swift in Sources */,
+				3B15A93B252DF03F0028D70C /* StatsCellProtocol.swift in Sources */,
 				3B8F2207252B4E5500A423B7 /* AppDelegate.swift in Sources */,
+				3B15A8CA252DB4960028D70C /* MorningInput.swift in Sources */,
+				3B15A901252DD9920028D70C /* StatsTableViewController.swift in Sources */,
+				3B15A9942534245C0028D70C /* APIError.swift in Sources */,
+				3B15A89C252CA9C60028D70C /* Util.swift in Sources */,
+				3B15A960253087CE0028D70C /* RequestIntreceptor.swift in Sources */,
+				3B8F2242252B4EF400A423B7 /* Question.swift in Sources */,
+				3B15A933252DEF790028D70C /* SimpleChartViewController.swift in Sources */,
+				3B8F2243252B4EF400A423B7 /* Constants.swift in Sources */,
+				3B15A906252DDC630028D70C /* InputDataSource.swift in Sources */,
+				3B8F223A252B4EEC00A423B7 /* Api.swift in Sources */,
+				3B15A95A252F7A710028D70C /* LoginViewController.swift in Sources */,
+				3B15A8C5252DB3810028D70C /* StatsViewController.swift in Sources */,
 				3B8F2209252B4E5500A423B7 /* SceneDelegate.swift in Sources */,
+				3B15A8D0252DBBE80028D70C /* EveningInput.swift in Sources */,
+				3B15A9E72534880E0028D70C /* SettingsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,17 +599,19 @@
 		};
 		3B8F222E252B4E5600A423B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BADB92A0FE8D9E992CF858B /* Pods-medicalDiary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = medicalDiary/medicalDiary.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 395PJRHQ52;
+				DEVELOPMENT_TEAM = 27SQ3W44A7;
 				INFOPLIST_FILE = medicalDiary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Marko.medicalDiary;
+				PRODUCT_BUNDLE_IDENTIFIER = brandie.medicalDiary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -452,17 +620,19 @@
 		};
 		3B8F222F252B4E5600A423B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A97924B95F8C6278B1AFA9EA /* Pods-medicalDiary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = medicalDiary/medicalDiary.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 395PJRHQ52;
+				DEVELOPMENT_TEAM = 27SQ3W44A7;
 				INFOPLIST_FILE = medicalDiary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Marko.medicalDiary;
+				PRODUCT_BUNDLE_IDENTIFIER = brandie.medicalDiary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
