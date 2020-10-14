@@ -16,11 +16,16 @@ enum LoginAction {
 class LoginViewController: UIViewController, ASAuthorizationControllerDelegate {
 
     @IBOutlet weak var loginStackView: UIStackView!
+    @IBOutlet weak var label: UILabel!
+    
     public var action: LoginAction!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         setUpSignInAppleButton()
     }
     
@@ -31,6 +36,8 @@ class LoginViewController: UIViewController, ASAuthorizationControllerDelegate {
         //Add button on some view or stack
         self.loginStackView.addArrangedSubview(authorizationButton)
         self.loginStackView.isHidden = false
+        self.loginStackView.fadeIn(withDuration: 1)
+        label.fadeIn(withDuration: 1)
     }
     
 
@@ -47,29 +54,33 @@ class LoginViewController: UIViewController, ASAuthorizationControllerDelegate {
         if let appleIDCredential = authorization.credential as?  ASAuthorizationAppleIDCredential {
         
             
-        let userIdentifier = appleIDCredential.user
-        let fullName = appleIDCredential.fullName
-        let email = appleIDCredential.email
-        Api.shared.login(params: ["appleId": userIdentifier]) { success in
-            if success {
-                switch self.action {
-                case .Dissmiss, .none:
-                    self.dismiss(animated: true, completion: nil)
-                case .Redirect:
-                    let pvc = UIApplication.shared.windows.first!.rootViewController
-                    self.dismiss(animated: true) {
-                        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                        let vc: UITabBarController = storyboard.instantiateViewController(withIdentifier: "mainVC") as! UITabBarController
-                        vc.modalPresentationStyle = .fullScreen
-                        vc.modalTransitionStyle = .crossDissolve
-                        pvc?.present(vc, animated: false, completion: nil)
-                    }
-                }
-            } else {
-                print("Login failed")
+            let userIdentifier = appleIDCredential.user
+            var params = ["appleId": userIdentifier]
+            if let fullname = appleIDCredential.fullName {
+                params["fullName"] = fullname.description
             }
-        }
-        print("User id is \(userIdentifier) \n Full Name is \(String(describing: fullName)) \n Email id is \(String(describing: email))")
+            if let email = appleIDCredential.email {
+                params["email"] = email
+            }
+            Api.shared.login(params: params) { success in
+                if success {
+                    switch self.action {
+                    case .Dissmiss, .none:
+                        self.dismiss(animated: true, completion: nil)
+                    case .Redirect:
+                        let pvc = UIApplication.shared.windows.first!.rootViewController
+                        self.dismiss(animated: true) {
+                            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                            let vc: UITabBarController = storyboard.instantiateViewController(withIdentifier: "mainVC") as! UITabBarController
+                            vc.modalPresentationStyle = .fullScreen
+                            vc.modalTransitionStyle = .crossDissolve
+                            pvc?.present(vc, animated: false, completion: nil)
+                        }
+                    }
+                } else {
+                    print("Login failed")
+                }
+            }
         }
     }
     

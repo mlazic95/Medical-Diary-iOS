@@ -165,6 +165,32 @@ struct Api {
         }
     }
     
+    func getUser(completion: @escaping (APIError?, User?)-> Void) {
+        let url = ProcessInfo.processInfo.environment["base_url"]! + "user"
+        AF.request(url, method: .get, encoding: JSONEncoding.default, headers: .default, interceptor: self.interceptor).responseJSON { (response) in
+            switch response.result {
+            case .success(_):
+                do {
+                    let dict = try JSONSerialization.jsonObject(with: response.data!, options: []) as! [String: String]
+                    let json = try JSONSerialization.data(withJSONObject: dict)
+                    let user = try JSONDecoder().decode(User.self, from: json)
+                    completion(nil, user)
+                }
+                catch let error {
+                    completion(APIError.Default, nil)
+                    print(error.localizedDescription)
+                }
+            case .failure(let error):
+                if response.response?.statusCode == 403 {
+                    completion(APIError.Unauthorized, nil)
+                } else {
+                    completion(APIError.Default, nil)
+                }
+                print(error)
+            }
+        }
+    }
+    
     private func postInput(url: String, params: [String: Any], completion: @escaping (Bool)-> Void) {
         AF.request(url, method: .post, parameters: params, encoding: JSONEncoding.default, headers: .default, interceptor: self.interceptor).responseJSON { (response) in
             switch response.result {

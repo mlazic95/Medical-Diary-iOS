@@ -7,21 +7,23 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class StartViewController: UIViewController {
     
     @IBOutlet weak var morningButton: UIButton!
     @IBOutlet weak var eveningButton: UIButton!
     @IBOutlet weak var refreshButton: UIButton!
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var welcomeLabel: UILabel!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        welcomeLabel.text = "Welcome " + (UserDataSource.shared.getUser()?.fullName ?? "") + "!"
         refreshView()
     }
     

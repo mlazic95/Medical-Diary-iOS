@@ -56,3 +56,13 @@ extension Date {
 extension String {
     var iso8601withFractionalSeconds: Date? { return Formatter.iso8601withFractionalSeconds.date(from: self) }
 }
+
+extension UIView {
+    func fadeIn(withDuration: Double) {
+        self.alpha = 0
+        self.isHidden = false
+        UIView.animate(withDuration: withDuration) {
+            self.alpha = 1
+        }
+    }
+}

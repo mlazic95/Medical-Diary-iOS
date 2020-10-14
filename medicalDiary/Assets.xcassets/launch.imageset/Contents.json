@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "bill-oxford-8u_2imJaVQs-unsplash.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "bill-oxford-8u_2imJaVQs-unsplash-1.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "bill-oxford-8u_2imJaVQs-unsplash-2.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

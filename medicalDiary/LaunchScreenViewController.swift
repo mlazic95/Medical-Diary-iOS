@@ -11,7 +11,7 @@ class LaunchScreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        Api.shared.checkAvailability() {error, morning, evening in
+        UserDataSource.shared.fetchUser() { error in
             let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             if let error = error {
                 if error == APIError.Unauthorized {
@@ -28,6 +28,5 @@ class LaunchScreenViewController: UIViewController {
                 self.present(vc, animated: true, completion: nil)
             }
         }
-        // Do any additional setup after loading the view.
     }
 }

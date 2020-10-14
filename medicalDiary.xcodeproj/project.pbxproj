@@ -21,12 +21,13 @@
 		3B15A98F253420DE0028D70C /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15A98E253420DE0028D70C /* LaunchScreenViewController.swift */; };
 		3B15A9942534245C0028D70C /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15A9932534245C0028D70C /* APIError.swift */; };
 		3B15A9E72534880E0028D70C /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15A9E62534880E0028D70C /* SettingsTableViewController.swift */; };
+		3B15A9FA2535EFE80028D70C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15A9F92535EFE80028D70C /* User.swift */; };
+		3B15AA002535F2B60028D70C /* UserDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15A9FF2535F2B60028D70C /* UserDataSource.swift */; };
 		3B8F2207252B4E5500A423B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F2206252B4E5500A423B7 /* AppDelegate.swift */; };
 		3B8F2209252B4E5500A423B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F2208252B4E5500A423B7 /* SceneDelegate.swift */; };
-		3B8F220B252B4E5500A423B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F220A252B4E5500A423B7 /* ViewController.swift */; };
+		3B8F220B252B4E5500A423B7 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F220A252B4E5500A423B7 /* StartViewController.swift */; };
 		3B8F220E252B4E5500A423B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8F220C252B4E5500A423B7 /* Main.storyboard */; };
 		3B8F2210252B4E5600A423B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8F220F252B4E5600A423B7 /* Assets.xcassets */; };
-		3B8F2213252B4E5600A423B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8F2211252B4E5600A423B7 /* LaunchScreen.storyboard */; };
 		3B8F221E252B4E5600A423B7 /* medicalDiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F221D252B4E5600A423B7 /* medicalDiaryTests.swift */; };
 		3B8F2229252B4E5600A423B7 /* medicalDiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F2228252B4E5600A423B7 /* medicalDiaryUITests.swift */; };
 		3B8F223A252B4EEC00A423B7 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F2239252B4EEC00A423B7 /* Api.swift */; };
@@ -69,13 +70,14 @@
 		3B15A98E253420DE0028D70C /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		3B15A9932534245C0028D70C /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		3B15A9E62534880E0028D70C /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		3B15A9F92535EFE80028D70C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3B15A9FF2535F2B60028D70C /* UserDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSource.swift; sourceTree = "<group>"; };
 		3B8F2203252B4E5500A423B7 /* medicalDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = medicalDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B8F2206252B4E5500A423B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B8F2208252B4E5500A423B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3B8F220A252B4E5500A423B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B8F220A252B4E5500A423B7 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		3B8F220D252B4E5500A423B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B8F220F252B4E5600A423B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3B8F2212252B4E5600A423B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B8F2214252B4E5600A423B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B8F2219252B4E5600A423B7 /* medicalDiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = medicalDiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B8F221D252B4E5600A423B7 /* medicalDiaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medicalDiaryTests.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				3B8F223F252B4EF400A423B7 /* Question.swift */,
 				3B15A8C9252DB4960028D70C /* MorningInput.swift */,
 				3B15A8CF252DBBE80028D70C /* EveningInput.swift */,
+				3B15A9F92535EFE80028D70C /* User.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -159,9 +162,17 @@
 			isa = PBXGroup;
 			children = (
 				3B8F220C252B4E5500A423B7 /* Main.storyboard */,
-				3B8F2211252B4E5600A423B7 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3B15A9FE2535F2910028D70C /* Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				3B15A905252DDC630028D70C /* InputDataSource.swift */,
+				3B15A9FF2535F2B60028D70C /* UserDataSource.swift */,
+			);
+			path = "Data Source";
 			sourceTree = "<group>";
 		};
 		3B8F21FA252B4E5500A423B7 = {
@@ -190,18 +201,18 @@
 			isa = PBXGroup;
 			children = (
 				3B15A984253090FB0028D70C /* Storyboards */,
+				3B15A9FE2535F2910028D70C /* Data Source */,
 				3B15A95E253087BC0028D70C /* Api */,
 				3B15A8CE252DBBD20028D70C /* models */,
 				3B8F2240252B4EF400A423B7 /* Constants.swift */,
 				3B15A932252DEF790028D70C /* SimpleChartViewController.swift */,
 				3B8F223E252B4EF400A423B7 /* QuestionsViewController.swift */,
-				3B15A905252DDC630028D70C /* InputDataSource.swift */,
 				3B8F2206252B4E5500A423B7 /* AppDelegate.swift */,
 				3B8F2208252B4E5500A423B7 /* SceneDelegate.swift */,
 				3B8F220F252B4E5600A423B7 /* Assets.xcassets */,
 				3B8F2214252B4E5600A423B7 /* Info.plist */,
 				3B15A955252F78E70028D70C /* medicalDiary.entitlements */,
-				3B8F220A252B4E5500A423B7 /* ViewController.swift */,
+				3B8F220A252B4E5500A423B7 /* StartViewController.swift */,
 				3B15A89B252CA9C60028D70C /* Util.swift */,
 				3B15A8C4252DB3810028D70C /* StatsViewController.swift */,
 				3B15A900252DD9920028D70C /* StatsTableViewController.swift */,
@@ -337,7 +348,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B8F2213252B4E5600A423B7 /* LaunchScreen.storyboard in Resources */,
 				3B8F2210252B4E5600A423B7 /* Assets.xcassets in Resources */,
 				3B8F220E252B4E5500A423B7 /* Main.storyboard in Resources */,
 			);
@@ -407,7 +417,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B15A98F253420DE0028D70C /* LaunchScreenViewController.swift in Sources */,
-				3B8F220B252B4E5500A423B7 /* ViewController.swift in Sources */,
+				3B8F220B252B4E5500A423B7 /* StartViewController.swift in Sources */,
 				3B15A90F252DE59C0028D70C /* StatsTableViewCell.swift in Sources */,
 				3B8F2241252B4EF400A423B7 /* QuestionsViewController.swift in Sources */,
 				3B15A93B252DF03F0028D70C /* StatsCellProtocol.swift in Sources */,
@@ -416,12 +426,14 @@
 				3B15A901252DD9920028D70C /* StatsTableViewController.swift in Sources */,
 				3B15A9942534245C0028D70C /* APIError.swift in Sources */,
 				3B15A89C252CA9C60028D70C /* Util.swift in Sources */,
+				3B15A9FA2535EFE80028D70C /* User.swift in Sources */,
 				3B15A960253087CE0028D70C /* RequestIntreceptor.swift in Sources */,
 				3B8F2242252B4EF400A423B7 /* Question.swift in Sources */,
 				3B15A933252DEF790028D70C /* SimpleChartViewController.swift in Sources */,
 				3B8F2243252B4EF400A423B7 /* Constants.swift in Sources */,
 				3B15A906252DDC630028D70C /* InputDataSource.swift in Sources */,
 				3B8F223A252B4EEC00A423B7 /* Api.swift in Sources */,
+				3B15AA002535F2B60028D70C /* UserDataSource.swift in Sources */,
 				3B15A95A252F7A710028D70C /* LoginViewController.swift in Sources */,
 				3B15A8C5252DB3810028D70C /* StatsViewController.swift in Sources */,
 				3B8F2209252B4E5500A423B7 /* SceneDelegate.swift in Sources */,
@@ -468,14 +480,6 @@
 				3B8F220D252B4E5500A423B7 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3B8F2211252B4E5600A423B7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3B8F2212252B4E5600A423B7 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -614,7 +618,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = brandie.medicalDiary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -635,7 +639,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = brandie.medicalDiary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
